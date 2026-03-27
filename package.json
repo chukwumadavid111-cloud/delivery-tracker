@@ -1,0 +1,19 @@
+{
+  "name": "delivery-tracker",
+  "version": "1.0.0",
+  "description": "Full-stack delivery tracking platform with real-time GPS",
+  "private": true,
+  "scripts": {
+    "start": "npm --prefix backend start",
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm start",
+    "build": "cd frontend && npm run build",
+    "install-all": "npm install && npm install --prefix backend && npm install --prefix frontend",
+    "docker:build": "docker build -t delivery-tracker .",
+    "docker:run": "docker run -p 4000:4000 delivery-tracker",
+    "docker:compose": "docker-compose up --build"
+  },
+  "keywords": ["delivery", "tracking", "gps", "realtime"],
+  "author": "",
+  "license": "MIT"
+}

@@ -1,0 +1,119 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(140deg, #1e3a8a 0%, #2563eb 40%, #93c5fd 100%);
+  color: #0f172a;
+  font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#root {
+  padding: 30px;
+}
+
+.app-shell {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 24px;
+  background: rgba(255,255,255,0.92);
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.2);
+}
+
+.app-title {
+  margin: 0 0 14px;
+  color: #111827;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.panel {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 18px;
+  margin-bottom: 20px;
+}
+
+.panel h2 {
+  margin-top: 0;
+  color: #1e3a8a;
+}
+
+.form-grid {
+  display: grid;
+  gap: 10px;
+}
+
+input,
+button {
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-size: 0.95rem;
+}
+
+input:focus {
+  outline: 2px solid #93c5fd;
+  border-color: #3b82f6;
+}
+
+button {
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+  transition: transform 120ms ease, box-shadow 120ms ease;
+}
+
+button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 14px rgba(37, 99, 235, 0.3);
+}
+
+button:disabled {
+  background: #93c5fd;
+  cursor: not-allowed;
+}
+
+.delivery-card {
+  border: 1px solid #dbeafe;
+  border-radius: 12px;
+  background: #f8fafc;
+  box-shadow: 0 8px 16px rgba(15, 23, 42, 0.08);
+  padding: 14px;
+  margin-bottom: 12px;
+}
+
+.delivery-row {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.status-badge {
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #1e3a8a;
+  background: #e0f2fe;
+}
+
+.status-options button {
+  margin: 2px 2px 0 0;
+  background: #e5e7eb;
+  color: #1f2937;
+}
+
+.status-options button:first-child {
+  background: #f97316;
+  color: white;
+  font-weight: 600;
+}
+
+.status-options button:first-child:hover {
+  box-shadow: 0 6px 14px rgba(249, 115, 22, 0.4);
+}
+
+

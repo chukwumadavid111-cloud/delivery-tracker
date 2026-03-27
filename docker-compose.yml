@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  delivery-tracker:
+    build: .
+    ports:
+      - "4000:4000"
+      - "3000:4000"
+    environment:
+      - NODE_ENV=production
+      - PORT=4000
+    restart: unless-stopped
+    volumes:
+      - ./backend/db.sqlite:/app/backend/db.sqlite

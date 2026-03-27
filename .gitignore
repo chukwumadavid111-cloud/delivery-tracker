@@ -1,0 +1,16 @@
+node_modules/
+.env
+.env.local
+.DS_Store
+*.sqlite
+*.db
+build/
+dist/
+.vscode/
+.idea/
+*.log
+npm-debug.log*
+.next/
+out/
+coverage/
+.nyc_output/
