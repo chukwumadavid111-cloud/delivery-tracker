@@ -54,11 +54,13 @@ function App() {
           <circle cx="50" cy="50" r="48" fill="#00d4ff" opacity="0.2" stroke="#00d4ff" strokeWidth="2"/>
           <path d="M 30 50 Q 50 30 70 50 Q 50 70 30 50" fill="#00d4ff" stroke="#ffffff" strokeWidth="2"/>
           <circle cx="50" cy="50" r="8" fill="#00d4ff"/>
-          <text x="50" y="85" textAnchor="middle" fill="#00d4ff" fontSize="14" fontWeight="bold">TRUSTWAY</text>
+          <text x="50" y="85" textAnchor="middle" fill="#00d4ff" fontSize="10" fontWeight="bold">TRUSTWAY</text>
         </svg>
-        <h1 className="app-title">TrustwayDelivery</h1>
+        <div>
+          <h1 className="app-title">TrustwayDelivery</h1>
+          <p className="tagline">Real-time Delivery Tracking Service</p>
+        </div>
       </div>
-      <p className="tagline">Real-time Delivery Tracking Service</p>
       <section className="panel">
         <h2>Create delivery</h2>
         <form onSubmit={createDelivery} className="form-grid">
