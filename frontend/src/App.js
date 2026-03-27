@@ -49,7 +49,16 @@ function App() {
 
   return (
     <div className="app-shell">
-      <h1 className="app-title">🚚 Delivery Tracker</h1>
+      <div className="logo-header">
+        <svg className="logo" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="50" cy="50" r="48" fill="#00d4ff" opacity="0.2" stroke="#00d4ff" strokeWidth="2"/>
+          <path d="M 30 50 Q 50 30 70 50 Q 50 70 30 50" fill="#00d4ff" stroke="#ffffff" strokeWidth="2"/>
+          <circle cx="50" cy="50" r="8" fill="#00d4ff"/>
+          <text x="50" y="85" textAnchor="middle" fill="#00d4ff" fontSize="14" fontWeight="bold">TRUSTWAY</text>
+        </svg>
+        <h1 className="app-title">TrustwayDelivery</h1>
+      </div>
+      <p className="tagline">Real-time Delivery Tracking Service</p>
       <section className="panel">
         <h2>Create delivery</h2>
         <form onSubmit={createDelivery} className="form-grid">
@@ -73,8 +82,8 @@ function App() {
                 <strong>{d.order_number}</strong>
                 <span className="status-badge">{d.status}</span>
               </div>
-              <div style={{ background: '#f0f9ff', padding: '8px 12px', borderRadius: '6px', marginBottom: '10px', fontSize: '0.85rem' }}>
-                <strong>Tracking Code:</strong> {d.tracking_code}
+              <div style={{ background: '#1a1a1a', padding: '8px 12px', borderRadius: '6px', marginBottom: '10px', fontSize: '0.85rem', border: '1px solid #00d4ff' }}>
+                <strong style={{ color: '#00d4ff' }}>Tracking Code:</strong> <span style={{ color: '#fff' }}>{d.tracking_code}</span>
               </div>
               <p>{d.customer_name} ▸ {d.pickup_address} → {d.dropoff_address}</p>
               <p>Driver: {d.driver_name} | ETA: {d.eta || 'N/A'}</p>
