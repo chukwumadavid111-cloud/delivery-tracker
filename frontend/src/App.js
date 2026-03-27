@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-const API_BASE = process.env.REACT_APP_API_BASE || 'http://localhost:4000/api';
+const API_BASE = process.env.REACT_APP_API_BASE || '/api';
 
 function App() {
   const [deliveries, setDeliveries] = useState([]);
